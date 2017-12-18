@@ -14,12 +14,6 @@ This is a dynamic LLVM Pass which is to give the basicblocks id and profile the 
 
 ### execute by the Pass
 
-`opt -load /the/path/of/libsynamicBBPass.so -pathProfiling /the/path/of/llvm/IR/file -S -o /new/file`
+`opt -load /the/path/of/libCFGPass.so -CFG /the/path/of/llvm/IR/file`
 
-### execute the binary file and link the runtime library
-
-`clang++ -o /new/file /output/IR/file /the/path/of/libdynamic-rt.a`
-
-`./executefilename`
-
-will output a file which record the BasicBlocks' execution path
+then there are the outputs.
