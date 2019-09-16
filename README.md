@@ -1,5 +1,5 @@
 # llvm_CFGPass
-llvm control flow graph分析
+llvm control flow graph dump
 ---
 
 This is a dynamic LLVM Pass which is to give the basicblocks id and profile the ids.
